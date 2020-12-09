@@ -57,8 +57,8 @@ if(text != null){
             setTimeout(()=>{link.click();},1000);
             break;
         }
-    }
-    setTimeout(()=>{pageNum = document.querySelector('span.pager__item ').innerText;
+        }
+        setTimeout(()=>{pageNum = document.querySelector('span.pager__item ').innerText;
                     if(!linkIsFound && pageNum<10){
                         setTimeout(()=>{
                             document.getElementsByClassName('pager__item_kind_next')[0].click();
@@ -67,9 +67,9 @@ if(text != null){
                         location.href = 'https://yandex.ru';
                     }
                    },1000);
-}else{
+    }
+else {
     let links = document.links;
     let link = links[getRandom(0,links.length)];
     setTimeout(()=>{link.click();},3000);
 }
-
